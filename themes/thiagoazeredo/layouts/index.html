@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Thiago Ribeiro de Azeredo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/vtimeline.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+
+        <div class="top">
+
+            <!-- Logo -->
+            <div id="logo">
+                <span class="image avatar48"><img src="http://www.gravatar.com/avatar/ff97817e600ea9e38335d3542f4800b8" alt="" /></span>
+                <h1 id="title">Thiago Azeredo</h1>
+                <p>Full-stack software developer</p>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+                <ul>
+                    <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                    <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                    <li><a href="#posts" id="posts-link" class="skel-layers-ignoreHref"><span class="icon fa-comments-o">Posts</span></a></li>
+                    <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                    <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="bottom">
+
+            <!-- Social Icons -->
+            <ul class="icons">
+                <li><a href="http://github.thiagoazeredo.com" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="http://linkedin.thiagoazeredo.com" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="#contact" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Intro -->
+        <section id="top" class="one dark cover">
+            <div class="container">
+
+                <header>
+                    <h2 class="alt">{{ .Site.Params.title}}</h2>
+                    <p>{{ .Site.Params.subtitle | markdownify}}</p>
+                    <p>
+                        <div class="tags">{{ range .Site.Params.tags }}
+                            <div>{{ . }}</div>{{ end }}
+                            <div>and some other things that probably I forgot...</div>
+                        </div>
+                    </p>
+
+                </header>
+
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="two">
+            <div class="container">
+
+                <header>
+                    <h2>Portfolio</h2>
+                </header>
+                <div class="row projects">
+
+                    <div class="12u 12u$(mobile)">
+                        <div class="wrap">
+
+                            <!--<div style="display:flex;flex-direction: row;flex-wrap: no-wrap;">
+                                <div style="display:inline-flex;width:40px">
+                                    <button class="btn prev"><i class="icon fa-chevron-left"></i></button>
+                                </div>
+                                <div class="frame" id="open-list">
+
+                                    <ul class="clearfix">
+                                        {{range .Site.Params.projects}}
+                                        <li>{{.title}}</li>
+                                        {{end}}
+                                    </ul>
+
+                                </div>
+                                <div style="display:inline-flex;">
+                                    <button class="btn next"><i class="icon fa-chevron-right"></i></button>
+                                </div>
+                            </div>-->
+
+                            <section id="cd-timeline" class="cd-container">
+                                {{range .Site.Params.projects}}
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-picture">
+                                        
+                                    </div>
+                                    <!-- cd-timeline-img -->
+
+                                    <div class="cd-timeline-content">
+                                        <h2>{{.title}}</h2>
+                            <p>Description: {{.description}}</p>
+                            <p>Technologies: {{.technologies}}</p>
+                            <div style="text-align:right;padding:10px"><button><i class="icon fa-github" style="padding-right:4px;"></i> View more</button></div>
+                                        <span class="cd-date"></span>
+                                    </div>
+                                    <!-- cd-timeline-content -->
+                                </div>
+                                <!-- cd-timeline-block -->
+                                {{end}}
+                            </section>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                
+        </section>
+
+        <section id="posts" class="three">
+            <div class="container">
+
+                <header>
+                    <h2>Posts</h2>
+                </header>
+                Some content created by me.
+            </div>
+        </section>
+
+
+        <!-- About Me -->
+        <section id="about" class="four">
+            <div class="container">
+
+                <header>
+                    <h2>About Me</h2>
+                </header>
+                {{ with .Site.Params.about }}
+                <p> {{ .description }}</p>
+                <div class="skills">
+
+
+                    {{ range .skill }}
+                    <div class="skillitem">
+                        <div class="skillname">{{ .name }}</div>
+                        <div class="skill">
+                            {{ range (seq .note) }}
+                            <i class="icon-pacman" style="color:#440000"></i> {{end}} {{ $ghost := sub 10 .note }} {{ range (seq $ghost) }}
+                            <i class="icon fa-snapchat-ghost" style="color:#BBBBBB"></i> {{end}}
+                        </div>
+                    </div>
+                    {{end}}
+
+
+                </div>
+                {{end}}
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="five">
+            <div class="container">
+
+                <header>
+                    <h2>Contact</h2>
+                </header>
+
+                <p>Elementum sem parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc orci ridiculus faucibus a consectetur. Porttitor
+                    curae mauris urna mi dolor.</p>
+
+                <form method="post" action="https://formspree.io/dev@thiagoazeredo.com">
+                    <!--
+								$.ajax({
+    url: "https://formspree.io/you@email.com", 
+    method: "POST",
+    data: {message: "hello!"},
+    dataType: "json"
+});
+-->
+                    <input type="hidden" name="subject" value="Site Contact" />
+                    <div class="row">
+                        <div class="6u$ 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+                        <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+                        <div class="12u$">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="12u$">
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="submit" value="Send Message" />
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+
+            <!-- Copyright -->
+            <ul class="copyright">
+                <li>Created by me using <a href="http://www.gohugo.io">HUGO</a>.</li>
+                <li>Based on<a href="http://html5up.net/prologue"> HTML5UP Prologue</a> theme</li>
+            </ul>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery_plugins.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollzer.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/modernizr.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

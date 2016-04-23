@@ -1,0 +1,104 @@
+baseurl = "http://www.thiagoazeredo.com"
+languageCode = "en-us"
+title = "Thiago Azeredo`s personal page"
+theme = "thiagoazeredo"
+
+[params]
+title = "Creative software engineer, passionate professional."
+subtitle = "\"From *idea* to *product*. From *web* to *game*. From *arduino* to *android*. From *C* to *NodeJS*. From *SQLite* to *MongoDB*. From *Apache* to *AWS*. From *earth* to *Moon*.\""
+tags= [
+        "C#",
+        "NODEJS",  
+        "C/C++",
+        "PYTHON",  
+        "PHP", 
+        "HTML", 
+        "JAVASCRIPT", 
+        "CSS", 
+        "Arduino", 
+        "Xamarin", 
+        "Android", 
+        "Apache", 
+        "NGINX", 
+        "Oracle", 
+        "MySQL", 
+        "SQLite", 
+        "Postgree", 
+        "MongoDB",
+        "AWS",
+        "GTK",
+        "Linux",
+        "Docker",
+        "WPF",
+        "Angular",
+        "JQuery"]
+    
+[params.about]
+    description =  "M Sc software engineer with more than 12 years experience working with different programming languages and databases, in Windows and Linux environment.     I have designed, developed and produced numerous softwares and actualy working on software that allows to manage the offshore work with focus on improve  operation and security."
+    [[params.about.skill]]
+    name = "Coding"
+    note = 9
+    [[params.about.skill]]
+    name = "Architecture"
+    note = 7
+    [[params.about.skill]]
+    name = "Self learning"
+    note = 8
+    [[params.about.skill]]
+    name = "Team work"
+    note = 9
+    [[params.about.skill]]
+    name = "Criativity"
+    note = 9
+    [[params.about.skill]]
+    name = "Organization"
+    note = 6
+    
+    
+[[params.projects]]
+    title = "Chomsky´s Regular Grammar generator"
+    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
+    technologies="dsa kjdaldjalk dajdladja"
+    image = ""
+[[params.projects]]
+    title = "PyKillerBlock"
+    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
+    technologies="dsa kjdaldjalk dajdladja"
+    image = ""
+[[params.projects]]
+    title = "Volante Virtual"
+    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
+    technologies="dsa kjdaldjalk dajdladja"
+    image = ""
+[[params.projects]]
+    title = "C# Pdf Helpers for iTextSharp"
+    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
+    technologies="dsa kjdaldjalk dajdladja"
+    image = ""
+[[params.projects]]
+    title = "This page"
+    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
+    technologies="dsa kjdaldjalk dajdladja"
+    image = ""
+[[params.projects]]
+    title = "Job Scheduler"
+    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
+    technologies="dsa kjdaldjalk dajdladja"
+    image = ""
+[[params.projects]]
+    title = "Simple factory"
+    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
+    technologies="dsa kjdaldjalk dajdladja"
+    image = ""
+[[params.projects]]
+    title = "NHibernate instance"
+    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
+    technologies="dsa kjdaldjalk dajdladja"
+    image = ""
+  
+[[params.projects]]
+    title = "Chomsky´s Regular Grammar generator"
+    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
+    technologies="dsa kjdaldjalk dajdladja"
+    image = ""
+    
