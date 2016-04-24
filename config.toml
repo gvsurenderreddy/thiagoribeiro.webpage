@@ -60,26 +60,26 @@ tags= [
     title = "Chomsky´s Regular Grammar generator"
     description="A didactic word generator using the rules of the type 3 of Chomsky's theory, created to assist in my Theory of Computation classes."
     technologies="C# WPF"
-    image = ""
+    image = "img/study.svg"
     more = "https://github.com/thiagoribeiro/GeradorPalavrasChomskyTipo3"
 [[params.projects]]
     title = "PyKillerBlock"
     description="A pythonic version of classic 'break the wall' game created with educational intentions."
     technologies="Python Pygame"
-    image = ""
+    image = "img/study.svg"
     more = "https://github.com/thiagoribeiro/pyKillerBlock"
 [[params.projects]]
     title = "Virtual Wheel"
     description="My master´s project. System that uses stereoscopy able to recognize both hands simulating holding a steering wheel and replicates the movements for a racing game.  [![IMAGE ALT TEXT](http://img.youtube.com/vi/ijpovMsPSxk/0.jpg)](https://www.youtube.com/watch?v=ijpovMsPSxk \"See here\")"
     technologies="C++ Ogre3D CUDA Socket Pipeline-processing OpenCV"
-    image = ""
+    image = "img/book.svg"
     more = "https://github.com/thiagoribeiro/Volante-Virtual"
     
 [[params.projects]]
     title = "Karacol concierge"
     description="A concierge proprietary system created to serve a Brazilian region"
     technologies="PHP MySQL SphinxSearch"
-    image = ""
+    image = "img/sphere.svg"
     url = "http://www.karacol.com.br"
 #[[params.projects]]
 #    title = "C# Pdf Helpers for iTextSharp"

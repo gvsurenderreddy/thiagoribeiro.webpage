@@ -8,7 +8,7 @@
                 {{range .Site.Params.projects}}
                 <div class="cd-timeline-block">
                     <div class="cd-timeline-img cd-picture">
-
+                            {{with .image}}<img src="{{.}}" />{{end}}
                     </div>
                     <!-- cd-timeline-img -->
 
