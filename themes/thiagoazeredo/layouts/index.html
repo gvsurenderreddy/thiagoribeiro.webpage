@@ -34,19 +34,7 @@
 
             <!-- Nav -->
             <nav id="nav">
-                <!--
 
-								Prologue's nav expects links in one of two formats:
-
-								1. Hash link (scrolls to a different section within the page)
-
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-							-->
                 <ul>
                     <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
                     <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
@@ -99,56 +87,7 @@
                 <header>
                     <h2>Portfolio</h2>
                 </header>
-                <div class="row projects">
-
-                    <div class="12u 12u$(mobile)">
-                        <div class="wrap">
-
-                            <!--<div style="display:flex;flex-direction: row;flex-wrap: no-wrap;">
-                                <div style="display:inline-flex;width:40px">
-                                    <button class="btn prev"><i class="icon fa-chevron-left"></i></button>
-                                </div>
-                                <div class="frame" id="open-list">
-
-                                    <ul class="clearfix">
-                                        {{range .Site.Params.projects}}
-                                        <li>{{.title}}</li>
-                                        {{end}}
-                                    </ul>
-
-                                </div>
-                                <div style="display:inline-flex;">
-                                    <button class="btn next"><i class="icon fa-chevron-right"></i></button>
-                                </div>
-                            </div>-->
-
-                            <section id="cd-timeline" class="cd-container">
-                                {{range .Site.Params.projects}}
-                                <div class="cd-timeline-block">
-                                    <div class="cd-timeline-img cd-picture">
-                                        
-                                    </div>
-                                    <!-- cd-timeline-img -->
-
-                                    <div class="cd-timeline-content">
-                                        <h2>{{.title}}</h2>
-                            <p>Description: {{.description}}</p>
-                            <p>Technologies: {{.technologies}}</p>
-                            <div style="text-align:right;padding:10px"><button><i class="icon fa-github" style="padding-right:4px;"></i> View more</button></div>
-                                        <span class="cd-date"></span>
-                                    </div>
-                                    <!-- cd-timeline-content -->
-                                </div>
-                                <!-- cd-timeline-block -->
-                                {{end}}
-                            </section>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                
+                {{partial "projects.html" .}}
         </section>
 
         <section id="posts" class="three">
@@ -157,7 +96,7 @@
                 <header>
                     <h2>Posts</h2>
                 </header>
-                Some content created by me.
+                {{partial "posts.html" . }}
             </div>
         </section>
 
@@ -169,26 +108,7 @@
                 <header>
                     <h2>About Me</h2>
                 </header>
-                {{ with .Site.Params.about }}
-                <p> {{ .description }}</p>
-                <div class="skills">
-
-
-                    {{ range .skill }}
-                    <div class="skillitem">
-                        <div class="skillname">{{ .name }}</div>
-                        <div class="skill">
-                            {{ range (seq .note) }}
-                            <i class="icon-pacman" style="color:#440000"></i> {{end}} {{ $ghost := sub 10 .note }} {{ range (seq $ghost) }}
-                            <i class="icon fa-snapchat-ghost" style="color:#BBBBBB"></i> {{end}}
-                        </div>
-                    </div>
-                    {{end}}
-
-
-                </div>
-                {{end}}
-
+                {{partial "about.html" . }}
             </div>
         </section>
 
@@ -200,32 +120,7 @@
                     <h2>Contact</h2>
                 </header>
 
-                <p>Elementum sem parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc orci ridiculus faucibus a consectetur. Porttitor
-                    curae mauris urna mi dolor.</p>
-
-                <form method="post" action="https://formspree.io/dev@thiagoazeredo.com">
-                    <!--
-								$.ajax({
-    url: "https://formspree.io/you@email.com", 
-    method: "POST",
-    data: {message: "hello!"},
-    dataType: "json"
-});
--->
-                    <input type="hidden" name="subject" value="Site Contact" />
-                    <div class="row">
-                        <div class="6u$ 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-                        <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-                        <div class="12u$">
-                            <textarea name="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="12u$">
-                            <input type="text" name="_gotcha" style="display:none" />
-                            <input type="submit" value="Send Message" />
-                        </div>
-                    </div>
-                </form>
-
+                {{partial "contact.html" . }}
             </div>
         </section>
 

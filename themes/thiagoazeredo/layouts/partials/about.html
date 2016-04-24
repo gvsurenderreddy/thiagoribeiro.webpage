@@ -1,0 +1,19 @@
+{{ with .Site.Params.about }}
+<p> {{ .description }}</p>
+<div class="skills">
+
+
+    {{ range .skill }}
+    <div class="skillitem">
+        <div class="skillname">{{ .name }}</div>
+        <div class="skill">
+            {{ range (seq .note) }}
+            <i class="icon-pacman" style="color:#440000"></i> {{end}} {{ $ghost := sub 10 .note }} {{ range (seq $ghost) }}
+            <i class="icon fa-snapchat-ghost" style="color:#BBBBBB"></i> {{end}}
+        </div>
+    </div>
+    {{end}}
+
+
+</div>
+{{end}}

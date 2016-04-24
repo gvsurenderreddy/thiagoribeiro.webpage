@@ -146,6 +146,41 @@
             });
         }
 
+        $('#contact_form').submit(function(event) {
+            event.preventDefault();
+            $(".contact-wait").show();
+            $("input[type=submit]").hide();
+
+            var formData = {
+                'name': $('input[name=name]').val(),
+                'email': $('input[name=email]').val(),
+                'message': $('textarea[name=message]').val(),
+                '_subject': "Site contact"
+            };
+
+            // process the form
+            $.ajax({
+                    type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                    url: 'https://formspree.io/' + atob(contact), // the url where we want to POST
+                    data: formData, // our data object
+                    dataType: 'json', // what type of data do we expect back from the server
+                    encode: true
+                })
+                // using the done promise callback
+                .done(function(data) {
+
+                    $(".contact-thanks").show();
+                    $(".contact-wait").hide();
+                    $("input[type=submit]").show();
+                    // here we will handle errors and validation messages
+                });
+
+            // stop the form from submitting the normal way and refreshing the page
+
+            return false;
+        });
     });
+
+
 
 })(jQuery);

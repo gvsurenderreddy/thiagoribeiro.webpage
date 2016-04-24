@@ -1,0 +1,23 @@
+<div id="contactme">
+    <form id="contact_form">
+        <script>
+            var contact = "{{.Site.Params.mail | base64Encode}}";
+        </script>
+        <div class="row">
+            <div class="6u$ 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+            <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+            <div class="12u$">
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <div style="display:flex">
+                <div>
+                    <input type="submit" value="Send Message" />
+                </div>
+                <div class="contact-wait"><img src='images/loading.gif' /></div>
+                <div class="contact-thanks">
+                    Thank you, I will return as soon as possible.
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

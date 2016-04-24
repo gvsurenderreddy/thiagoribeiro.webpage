@@ -1,0 +1,35 @@
+<div class="row projects">
+
+    <div class="12u 12u$(mobile)">
+        <div class="wrap">
+
+
+            <section id="cd-timeline" class="cd-container">
+                {{range .Site.Params.projects}}
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+
+                    </div>
+                    <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h2>{{.title}}</h2>
+                        <p>{{.description | markdownify}}</p>
+                        <p>Technologies: {{.technologies}}</p>
+                        <div style="text-align:right;padding:10px">
+                            {{with .more }}
+                            <button onclick="location.href='{{.}}'"><i class="icon fa-github" style="padding-right:4px;"></i> View more</button> {{end}} {{with .url }}
+                            <button onclick="location.href='{{.}}'"><i class="icon fa-globe" style="padding-right:4px;"></i> Website</button> {{end}}
+                        </div>
+                        <span class="cd-date"></span>
+                    </div>
+                    <!-- cd-timeline-content -->
+                </div>
+                <!-- cd-timeline-block -->
+                {{end}}
+            </section>
+
+
+        </div>
+    </div>
+</div>
