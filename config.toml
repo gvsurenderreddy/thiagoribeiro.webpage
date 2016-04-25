@@ -1,11 +1,12 @@
 basemore = "http://www.thiagoazeredo.com"
+baseurl = "http://thiagoribeiro.github.io"
 languageCode = "en-us"
 title = "Thiago Azeredo`s personal page"
 theme = "thiagoazeredo"
 
 [params]
-title = "Creative software engineer, passionate professional."
-subtitle = "\"From *idea* to *product*. From *web* to *game*. From *arduino* to *android*. From *C* to *NodeJS*. From *SQLite* to *MongoDB*. From *Apache* to *AWS*. From *earth* to *Moon*.\""
+title = "Creative software engineer, passionate developer."
+subtitle = ""
 mail = "dev@thiagoazeredo.com"
 tags= [
         "C#",
