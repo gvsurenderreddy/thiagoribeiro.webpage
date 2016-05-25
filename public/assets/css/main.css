@@ -2573,10 +2573,13 @@ div.tags div:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
 }
 
 .skills div.skillitem {
-    margin-right: 60px;
+    /*margin-right: 60px;*/
+    flex:1 400px;
 }
 
 .skillname {
