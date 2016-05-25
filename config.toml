@@ -85,10 +85,16 @@ tags= [
 
 [[params.projects]]
     title = "Working hours registration"
-    description="![Project screenshot](img/working_hours.png) In the company I work, I need to access every day the company's site to register the entry and exit times of work, in addition to the lunch hour. I decided to create a small app for Android to do it for me with just one touch. Unfortunately the company not authorized to publish the  app in play store."
+    description="![Project screenshot](img/working_hours.png) In the company I work, I need to access every day the company's site to register the entry and exit times of work, in addition to the lunch hour. I decided to create a small app for Android to do it for me with just one touch. Unfortunately the company not authorized to publish the app in play store."
     technologies="Xamarin Android"
     image = "img/android.svg"
-    
+
+[[params.projects]]
+title = "Directv boxes Test Tool"
+description="Test tool to help tests on Directv boxes. This is a linux application to help people to control some directv boxes using jsonRPC. It is useful for tests because you can control manualy the box or create a script file to cover some default tests and replicate a problem.![Project screenshot](img/shef_print.png)"
+    technologies="Python GTK JsonRPC"
+    image = "img/python.svg"
+    more = "https://github.com/thiagoribeiro/sheftesttool"    
 #[[params.projects]]
 #    title = "C# Pdf Helpers for iTextSharp"
 #    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
@@ -114,10 +120,3 @@ tags= [
 #    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
 #    technologies="dsa kjdaldjalk dajdladja"
 #    image = ""
-  
-#[[params.projects]]
-#    title = "Chomsky´s Regular Grammar generator"
-#    description="bla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdkbla lblada dkja kdhasdhjadkjh dhajdk ahhd kjahdak dhad jahdhakdk"
-#    technologies="dsa kjdaldjalk dajdladja"
-#    image = ""
-    

@@ -2,19 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Thiago Azeredo`s personal page</title>
-    <link>http://www.thiagoazeredo.com/post/</link>
+    <link>http://thiagoribeiro.github.io/post/</link>
     <description>Recent content in Posts on Thiago Azeredo`s personal page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://www.thiagoazeredo.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 May 2016 21:50:25 -0300</lastBuildDate>
+    <atom:link href="http://thiagoribeiro.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title></title>
-      <link>http://www.thiagoazeredo.com/post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>DynVPN - free VPN online service</title>
+      <link>http://thiagoribeiro.github.io/post/dynvpn_vs_pertino/</link>
+      <pubDate>Mon, 23 May 2016 21:50:25 -0300</pubDate>
       
-      <guid>http://www.thiagoazeredo.com/post/</guid>
-      <description>&lt;p&gt;teste&lt;/p&gt;
+      <guid>http://thiagoribeiro.github.io/post/dynvpn_vs_pertino/</guid>
+      <description>
+
+&lt;p&gt;In some cases, have a VPN isn´t a easy task. In my case,
+my ISP only give me a internal IP, like 172.16.0.0.
+I found DynVPN sometime ago and now I will share this useful
+tool.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-is-a-vpn:43ee3f92b55584e51e3add2a35a51bc4&#34;&gt;What is a VPN?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.dynvpn.com/static/assets/img/dynvpn-network-ex1.png&#34; alt=&#34;Visual explain&#34; title=&#34;Visual explain&#34; /&gt;
+VPN (Virtual Private Lan) creates a secure tunnel to access a device
+but commonly the device needs to have a public IP.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-can-dynvpn-helps-me:43ee3f92b55584e51e3add2a35a51bc4&#34;&gt;How can DynVPN helps me?&lt;/h3&gt;
+
+&lt;p&gt;With dynVPN you can , for example, access your home server behind a firewall&lt;/p&gt;
 </description>
     </item>
     
